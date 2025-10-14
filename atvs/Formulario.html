@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Voluntários</title>
+</head>
+<form>
+
+    <body>
+        <h1>Cadastro de Voluntários</h1>
+        <form method="post">
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="escolhas">Áreas de Interesse:</label><br>
+            <select id="escolhas" name="escolhas" multiple required>
+                <option value="exploração">Exploração</option>
+                <option value="pesquisa">Pesquisa</option>
+                <option value="logistica">Logistica</option>
+                <option value="outros">Outros</option>
+            </select><br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </body>
+
+</form>
+
+
+</html>
