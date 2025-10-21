@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Anamnese - TecnoVida</title>
+</head>
+<body>
+
+    <h1>Formulário de Anamnese - Clínica TecnoVida</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome Completo:</label><br>
+            <input type="text" name="nome" required><br><br>
+
+            <label>Data de Nascimento:</label><br>
+            <input type="date" name="nascimento" required><br><br>
+
+            <label>Gênero:</label><br>
+            <select name="genero" required>
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+                <option value="nao_informar">Prefiro não informar</option>
+            </select><br><br>
+
+            <label>CPF:</label><br>
+            <input type="number" name="cpf" required><br><br>
+
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Histórico de Saúde</legend>
+
+            <label>Possui alguma doença crônica?</label><br>
+            <input type="radio" name="doenca_cronica" value="sim" required> Sim
+            <input type="radio" name="doenca_cronica" value="nao" required> Não<br><br>
+
+            <label>Quais medicamentos você utiliza regularmente?</label><br>
+            <textarea name="medicamentos" rows="3" cols="40"></textarea><br><br>
+
+            <label>Você fuma?</label><br>
+            <input type="checkbox" name="fuma" value="sim"> Sim<br><br>
+
+            <label>Altura (em cm):</label><br>
+            <input type="number" name="altura" required><br><br>
+
+            <label>Peso (em kg):</label><br>
+            <input type="number" name="peso" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes da Consulta</legend>
+
+            <label>Qual é o principal motivo da sua consulta?</label><br>
+            <textarea name="motivo_consulta" rows="2" cols="40"></textarea><br><br>
+
+            <label>Com que frequência você pratica exercícios físicos?</label><br>
+            <select name="frequencia_exercicios" required>
+                <option value="">Selecione</option>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="raramente">Raramente</option>
+                <option value="nunca">Nunca</option>
+            </select><br><br>
+
+            <label>Data da Última Consulta (aproximada):</label><br>
+            <input type="date" name="ultima_consulta"><br><br>
+
+            <label>Prefere ser contatado por:</label><br>
+            <input type="radio" name="contato" value="telefone" required> Telefone
+            <input type="radio" name="contato" value="email" required> E-mail<br><br>
+
+            <button type="submit">Enviar Formulário</button>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+
